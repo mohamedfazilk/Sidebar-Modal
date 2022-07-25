@@ -26,6 +26,19 @@ const Sidebar = () => {
               })}
           </ul>
 
+          <ul className='social-icons'>
+              {social.map((socialicons)=>{
+                  const{id,url,icon} = socialicons;
+                  return(
+                      <li key={id}>
+                          <a href={url}>
+                              {icon}
+                          </a>
+                      </li>
+                  )
+              })}
+          </ul>
+
 
   </aside>
 }
