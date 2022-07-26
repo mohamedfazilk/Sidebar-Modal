@@ -15,18 +15,18 @@ const AppProvider = ({children}) =>{
     }
     
 
-    const openmodal = () =>{
+    const openModal = () =>{
         setIsModalOpen(true)
     }
 
-    const closemodal = () =>{
+    const closeModal = () =>{
         setIsModalOpen(false)
     }
     
     
 
     return <AppContext.Provider  value={{isModalOpen,isSidebarOpen,openSidebar
-        ,closeSidebar,openmodal,closemodal}}>{children}</AppContext.Provider>
+        ,closeSidebar,openModal,closeModal}}>{children}</AppContext.Provider>
 }
 
 //custom hook
