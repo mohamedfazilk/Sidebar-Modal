@@ -7,8 +7,11 @@ import { useGlobalContext } from './context'
 
 
 const Sidebar = () => {
-  
-  return <aside className={`sidebar show-sidebar`}>
+    const {isSidebarOpen,closeSidebar} = useGlobalContext();//passing the state value and close function
+
+  return <aside className={`${
+      isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'
+      }`}>
       <div className="sidebar-header">
           <img src={logo} alt="codding-addict" />
           <button className='close-btn'>
