@@ -14,7 +14,8 @@ const Sidebar = () => {
       }`}>
       <div className="sidebar-header">
           <img src={logo} alt="codding-addict" />
-          <button className='close-btn'>
+          <button className='close-btn'
+          onClick={closeSidebar}>
               <FaTimes/>
           </button>
       </div>
