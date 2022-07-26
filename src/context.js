@@ -25,7 +25,8 @@ const AppProvider = ({children}) =>{
     
     
 
-    return <AppContext.Provider  value='hello'>{children}</AppContext.Provider>
+    return <AppContext.Provider  value={{isModalOpen,isSidebarOpen,openSidebar
+        ,closeSidebar,openmodal,closemodal}}>{children}</AppContext.Provider>
 }
 
 //custom hook
